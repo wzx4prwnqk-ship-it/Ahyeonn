@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECO SPHERE | 지구를 살리는 혁신</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #00ffa3;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffa3;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    #home {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      position: relative;
+    }
+
+    #home::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    #home h2 {
+      position: relative;
+      z-index: 2;
+      font-size: 60px;
+      line-height: 1.2;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    #home p {
+      position: relative;
+      z-index: 2;
+      font-size: 20px;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    #product {
+      background: #0f2027;
+    }
+
+    #product h2 {
+      font-size: 48px;
+      color: #00ffa3;
+      margin-bottom: 20px;
+    }
+
+    .product-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 0 30px rgba(0,255,163,0.3);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .product-card p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    #join {
+      background: #203a43;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      gap: 15px;
+      background: rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,163,0.3);
+    }
+
+    input, textarea, button {
+      border: none;
+      outline: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    input, textarea {
+      background: rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    button {
+      background: #00ffa3;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c97b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+      font-size: 14px;
+    }
+
+    /* 반응형 */
+    @media (max-width: 768px) {
+      #home h2 { font-size: 38px; }
+      #product h2 { font-size: 36px; }
+    }
+  </style>
+</head>
+
+<body>
+  <audio autoplay loop>
+    <source src="https://suno.com/s/2Y3OWDmLtPonHSRs" type="audio/mp3">
+  </audio>
+
+  <header>
+    <h1>ECO SPHERE</h1>
+    <nav>
+      <a href="#home">홈</a>
+      <a href="#product">제품</a>
+      <a href="#join">참여</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>지구를 구하는<br>혁신의 시작</h2>
+    <p>환경을 위해 만들어진 차세대 제품, ECO SPHERE</p>
+  </section>
+
+  <section id="product">
+    <h2>🌿 ECO SPHERE</h2>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1614732414444-096e7aa73b51?auto=format&fit=crop&w=1000&q=80" alt="eco product">
+      <p>
+        ECO SPHERE는 공기 정화, 수질 개선, 에너지 절감의 세 가지 기능을 결합한 혁신적인 친환경 장치입니다.  
+        오염된 공기를 정화하면서 남은 에너지를 재활용해 도시의 조명을 밝히고,  
+        재활용 소재로 만들어져 환경에 부담을 주지 않습니다.
+      </p>
+    </div>
+  </section>
+
+  <section id="join">
+    <h2>🌏 체험 신청하기</h2>
+    <form id="joinForm">
+      <input type="text" id="name" placeholder="이름" required>
+      <input type="email" id="email" placeholder="이메일" required>
+      <textarea id="message" placeholder="하고 싶은 말" rows="4"></textarea>
+      <button type="submit">신청하기</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 ECO SPHERE. All Rights Reserved.
+  </footer>
+
+  <script>
+    document.getElementById('joinForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      alert(`감사합니다, ${name}님! 🌱\nECO SPHERE 체험 신청이 완료되었습니다.`);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
